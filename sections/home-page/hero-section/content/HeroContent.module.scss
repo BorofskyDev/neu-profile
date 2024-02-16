@@ -1,7 +1,7 @@
 @use '../../../../styles/utils/mixins' as *;
 
 .heroContent {
-  @include dualSectionSubSection(var(--border-200));
+  @include dualSectionSubSection(var(--border-200), left);
 
   p {
     padding-bottom: var(--spacing-100);

@@ -7,11 +7,12 @@
     justify-content: center;
 }
 
-@mixin dualSectionSubSection ($border) {
+@mixin dualSectionSubSection ($border, $alignItems) {
     width: 100%;
     padding: var(--spacing-600) var(--spacing-300);
     border-bottom: $border;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: $alignItems;
 }
