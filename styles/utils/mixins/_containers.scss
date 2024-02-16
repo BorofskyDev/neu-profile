@@ -9,7 +9,7 @@
 
 @mixin dualSectionSubSection ($border) {
     width: 100%;
-    padding: var(--spacing-300);
+    padding: var(--spacing-600) var(--spacing-300);
     border-bottom: $border;
     display: flex;
     flex-direction: column;
