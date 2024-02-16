@@ -1,6 +1,6 @@
 :root {
-  --border-100: 1rem solid var(--black);
-  --border-200: 2rem solid var(--black);
-  --border-300: 3rem solid var(--black);
-  --border-400: 4rem solid var(--black);
+  --border-100: 0.0625rem solid hsl(var(--black));
+  --border-200: 0.125rem solid hsl(var(--black));
+  --border-300: 0.1875rem solid hsl(var(--black));
+  --border-400: 0.25rem solid hsl(var(--black));
 }
