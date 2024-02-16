@@ -1,0 +1,33 @@
+@use '../../../styles/utils/mixins' as *;
+
+.banner {
+  width: 100%;
+  padding: var(--spacing-100);
+  border-bottom: var(--border-200);
+  display: grid;
+  place-content: center;
+
+  @include breakpoint(tab) {
+    padding: var(--spacing-300);
+  }
+
+  h1 {
+    font-family: var(--font-title);
+    font-size: var(--fs-900);
+    font-weight: var(--fw-900);
+    letter-spacing: var(--letter-spacing-200);
+    margin: var(--spacing-200) 0;
+
+    @include breakpoint(tab) {
+      margin: var(--spacing-300) 0;
+    }
+
+    @include breakpoint(laptop) {
+      margin: var(--spacing-400) auto;
+    }
+
+    @include breakpoint(desktop) {
+      margin: var(--spacing-600) auto;
+    }
+  }
+}
