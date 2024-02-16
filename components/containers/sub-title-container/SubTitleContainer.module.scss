@@ -1,7 +1,10 @@
 .subTitleContainer {
     margin: var(--spacing-200) auto;
+    max-width: 80%;
     padding: var(--spacing-100) var(--spacing-300);
-    border: var(--border-100);
+    border: var(--border-300);
     border-radius: var(--border-radius-800);
     box-shadow: var(--box-shadow-200);
+    text-align: center;
+    line-height: 125%;
 }

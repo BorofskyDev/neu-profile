@@ -2,6 +2,7 @@
 
 .banner {
   width: 100%;
+  padding-inline: var(--spacing-300);
   border-bottom: var(--border-400);
   display: grid;
   place-content: center;

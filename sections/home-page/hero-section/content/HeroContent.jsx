@@ -7,10 +7,14 @@ export default function HeroContent({ className }) {
 
   return (
     <div className={containerClasses}>
-       <MainTitle>Hello!</MainTitle>
-       <p className='fs-600'>My name is <span className='accent fs-700'>Joel</span></p>
-       <p className='fs-600'>I am a...</p>
-       <SubTitleContainer className='accent light-bg-red fs-700'>Fullstack Developer</SubTitleContainer>
+      <MainTitle>Hello!</MainTitle>
+      <p className='fs-600'>
+        My name is <span className='accent fs-700'>Joel</span>
+      </p>
+      <p className='fs-600'>I am a...</p>
+      <SubTitleContainer className='accent light-bg-red fs-700'>
+        Fullstack Developer
+      </SubTitleContainer>
     </div>
   )
 }
