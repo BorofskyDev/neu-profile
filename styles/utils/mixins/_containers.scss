@@ -1,0 +1,8 @@
+@mixin dualSection {
+    width: 100%;
+    border-bottom: var(--border-400);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
