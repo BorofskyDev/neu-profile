@@ -1,3 +1,10 @@
 .mainTitle {
-    
+  margin-bottom: var(--spacing-200);
+  color: hsl(var(--indigo));
+  font-family: var(--font-title);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-900);
+  letter-spacing: var(--letter-spacing-200);
+  text-shadow: 0.125rem 0.125rem hsl(var(--light-orange)),
+    0.25rem 0.25rem hsl(var(--red));
 }

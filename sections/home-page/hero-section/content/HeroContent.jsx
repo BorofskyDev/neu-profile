@@ -8,8 +8,8 @@ export default function HeroContent({ className }) {
   return (
     <div className={containerClasses}>
        <MainTitle>Hello!</MainTitle>
-       <p>My name is <span>Joel</span></p>
-       <p>I am a...</p>
+       <p className='fs-600'>My name is <span className='accent fs-700'>Joel</span></p>
+       <p className='fs-600'>I am a...</p>
        <SubTitleContainer>Fullstack Developer</SubTitleContainer>
     </div>
   )

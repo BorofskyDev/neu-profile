@@ -2,4 +2,12 @@
 
 .heroContent {
   @include dualSectionSubSection(var(--border-200));
+
+  p {
+    padding-bottom: var(--spacing-100);
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 }
