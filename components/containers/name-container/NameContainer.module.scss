@@ -1,7 +1,7 @@
-@use '../../../styles/utils/mixins' as *;
+@use '../../../styles//utils/mixins' as *;
 
-.subTitleContainer {
-  @include titleContainer(
+.nameContainer {
+     @include titleContainer(
     var(--spacing-200),
     auto,
     var(--spacing-100),

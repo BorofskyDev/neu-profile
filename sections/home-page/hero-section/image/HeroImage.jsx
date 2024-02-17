@@ -12,6 +12,8 @@ export default function HeroImage({ className }) {
         alt='Joel Borofsky elementry school photo'
         bg1='light-bg-indigo'
         bg2='bg-blue'
+        bg3='light-bg-yellow'
+        title='Joel Borofsky'
       />
     </div>
   )

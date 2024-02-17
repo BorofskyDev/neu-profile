@@ -1,19 +1,36 @@
 @mixin dualSection {
-    width: 100%;
-    border-bottom: var(--border-400);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  border-bottom: var(--border-400);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin dualSectionSubSection ($border, $alignItems) {
-    width: 100%;
-    padding: var(--spacing-600) var(--spacing-300);
-    border-bottom: $border;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: $alignItems;
+@mixin dualSectionSubSection($border, $alignItems) {
+  width: 100%;
+  padding: var(--spacing-600) var(--spacing-300);
+  border-bottom: $border;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: $alignItems;
 }
 
+@mixin titleContainer(
+  $marginY,
+  $marginX,
+  $paddingY,
+  $paddingX,
+  $border,
+  $shadow
+) {
+  margin: $marginY $marginX;
+  max-width: 100%;
+  padding: $paddingY $paddingX;
+  border: $border;
+  border-radius: var(--border-radius-800);
+  box-shadow: $shadow;
+  text-align: center;
+  line-height: 125%;
+}
