@@ -1,17 +1,18 @@
-import Image from 'next/image'
-import joelKid from '@/assets/images/joel-school.png'
+import joelKid from '@/assets/images/joel-kid.png'
 import styles from './HeroImage.module.scss'
+import ImageContainer from '@/components/containers/image-container/ImageContainer'
 
-export default function HeroImage({ children, className }) {
+export default function HeroImage({ className }) {
   const imageClasses = `${styles.heroImage} ${className || ''}`
 
   return (
     <div className={imageClasses}>
-      <div className='light-bg-indigo'>
-        <div className='bg-blue'>
-          <Image width={100} height={130} src={joelKid} alt='Hero Image' />
-        </div>
-      </div>
+      <ImageContainer
+        src={joelKid}
+        alt='Joel Borofsky elementry school photo'
+        bg1='light-bg-indigo'
+        bg2='bg-blue'
+      />
     </div>
   )
 }
