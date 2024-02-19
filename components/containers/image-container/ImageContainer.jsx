@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import GenericContainer from '../generic-container/GenericContainer'
 import NameContainer from '../name-container/NameContainer'
@@ -23,6 +25,11 @@ export default function ImageContainer({
   bg3,
   title,
 }) {
+  const variants = {
+    initial: { y: 50, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+  }
+
   return (
     <GenericContainer className={bg1}>
       <SmallIcon
@@ -39,9 +46,15 @@ export default function ImageContainer({
         className={`${iconBg2} ${iconStyles.right}`}
         iconFill={iconFill2}
       />
-      <div className={`${styles.pictureContainer} ${bg2}`}>
+      <motion.div
+        className={`${styles.pictureContainer} ${bg2}`}
+        initial='initial'
+        animate='animate'
+        variants={variants}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
+      >
         <Image height={1600} width={1200} src={src} alt={alt} />
-      </div>
+      </motion.div>
       <NameContainer className={bg3}>{title}</NameContainer>
     </GenericContainer>
   )

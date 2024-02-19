@@ -1,3 +1,4 @@
+
 import styles from './SmallIconImg.module.scss'
 
 export default function SmallIconImg({ icon, viewBox, xmlns, iconFill, className }) {
