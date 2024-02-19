@@ -17,7 +17,7 @@ export default function HeroContent({ className }) {
       <SubTitleContainer className='accent light-bg-red fs-700 relative'>
 
         Fullstack Developer
-        <MediumIcon icon={icons.notBad} className='absolute right-0 bottom-25 bg-default fill-blue' />
+        <MediumIcon icon={icons.notBad.path} viewBox={icons.notBad.viewBox} className='absolute right-0 bottom-25 bg-default fill-blue' />
       </SubTitleContainer>
     </div>
   )
