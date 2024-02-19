@@ -1,3 +1,5 @@
+@use '../../../styles/utils/mixins' as *;
+
 .pictureContainer {
   padding-inline: var(--spacing-100);
   padding-top: var(--spacing-100);
@@ -8,5 +10,10 @@
   & img {
     height: 8.1875rem;
     width: 6.4375rem;
+
+    @include breakpoint(tab) {
+      height: 10.1875rem;
+      width: 8.4375rem;
+    }
   }
 }

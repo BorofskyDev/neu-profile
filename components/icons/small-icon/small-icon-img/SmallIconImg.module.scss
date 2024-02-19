@@ -1,4 +1,11 @@
+@use '../../../../styles/utils/mixins' as *;
+
 .smallIconImg {
   width: 2.8125rem;
   height: 3.4375rem;
+
+  @include breakpoint(tab) {
+    width: 3.4375rem;
+    height: 4.0625rem;
+  }
 }

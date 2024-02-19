@@ -19,4 +19,5 @@
 @mixin smallIcon {
   position: absolute;
   @include icon(3.875rem, 3.875rem, var(--box-shadow-100));
+
 }

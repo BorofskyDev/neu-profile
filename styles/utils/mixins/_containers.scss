@@ -32,6 +32,10 @@
       border-right: none;
     }
   }
+
+  @include breakpoint(laptop) {
+    height: 100dvh;
+  }
 }
 
 @mixin titleContainer(
