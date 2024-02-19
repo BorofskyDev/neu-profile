@@ -9,3 +9,10 @@
     align-items: center;
   }
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsl(var(--background));
+  z-index: 99999;
+}

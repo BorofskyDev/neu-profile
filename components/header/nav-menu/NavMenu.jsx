@@ -1,9 +1,14 @@
+import React from 'react'
 import NavLink from '@/components/links/nav-link/NavLink'
 import styles from './NavMenu.module.scss'
 
-export default function NavMenu() {
+const NavMenu = React.forwardRef((props, navbarRef) => {
+  const { isSticky } = props
   return (
-    <nav className={styles.navMenu}>
+    <nav
+      className={`${styles.navMenu} ${isSticky ? styles.sticky : ''}`}
+      ref={navbarRef}
+    >
       <ul>
         <NavLink href='/'>Home</NavLink>
         <NavLink href='/about'>About</NavLink>
@@ -12,4 +17,7 @@ export default function NavMenu() {
       </ul>
     </nav>
   )
-}
+})
+
+
+export default NavMenu

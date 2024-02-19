@@ -15,8 +15,10 @@ export function useStickyNav() {
       const bannerBottomPos = banner.getBoundingClientRect().bottom
 
       if (navPos <= 0 && bannerBottomPos < 0) {
+        console.log("I'm true")
         setIsSticky(true)
       } else {
+        console.log("I'm false")
         setIsSticky(false)
       }
     }
