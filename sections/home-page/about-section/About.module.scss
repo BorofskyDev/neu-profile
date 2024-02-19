@@ -1,3 +1,6 @@
+@use '../../../styles/utils/mixins' as *;
+
 .about {
-    
+  background-color: hsl(var(--light-red));
+  @include columnSection;
 }

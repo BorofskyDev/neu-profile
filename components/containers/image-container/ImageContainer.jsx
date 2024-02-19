@@ -25,10 +25,6 @@ export default function ImageContainer({
   bg3,
   title,
 }) {
-  const variants = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
-  }
 
   return (
     <GenericContainer className={bg1}>
@@ -48,9 +44,8 @@ export default function ImageContainer({
       />
       <motion.div
         className={`${styles.pictureContainer} ${bg2}`}
-        initial='initial'
-        animate='animate'
-        variants={variants}
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
       >
         <Image height={1600} width={1200} src={src} alt={alt} />

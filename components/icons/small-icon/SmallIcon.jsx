@@ -13,17 +13,12 @@ export default function SmallIcon({
 
   const isLeft = className.includes(style.left)
 
-  const variants = {
-    initial: { x: isLeft ? -50 : 50, opacity: 0 },
-    animate: {rotate: isLeft ? 325 : -315, x: 0, opacity: 1 },
-  }
 
   return (
     <motion.div
       className={iconClasses}
-      initial='initial'
-      animate='animate'
-      variants={variants}
+      initial={{ x: isLeft ? -50 : 50, opacity: 0 }}
+      whileInView={{ rotate: isLeft ? 325 : -315, x: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
       <SmallIconImg
