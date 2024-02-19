@@ -1,12 +1,11 @@
 @use '../../../styles/utils/mixins' as *;
 
 .mediumIcon {
-  bottom: var(--spacing-200);
-  right: var(--spacing-300);
+  bottom: var(--spacing-400);
+  right: var(--spacing-100);
   @include icon(4.6875rem, 4.6785rem, var(--box-shadow-100));
 
   @include breakpoint(tab) {
-    bottom: var(--spacing-300);
+    bottom: var(--spacing-400);
   }
 }
-

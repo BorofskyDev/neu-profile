@@ -15,6 +15,7 @@
 
 @mixin dualSectionSubSection($border, $alignItems) {
   width: 100%;
+  height: 100%;
   padding: var(--spacing-600) var(--spacing-300);
   border-bottom: $border;
   display: flex;

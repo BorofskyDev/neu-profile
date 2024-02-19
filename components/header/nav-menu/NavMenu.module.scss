@@ -3,6 +3,7 @@
   padding: 0 var(--spacing-300);
   border-bottom: var(--border-400);
   transition: var(--transition-fast);
+  z-index: 99999;
 
   ul {
     display: flex;
