@@ -6,6 +6,7 @@ import styles from './HeroContent.module.scss'
 
 export default function HeroContent({ className }) {
   const containerClasses = `${styles.heroContent} ${className || ''}`
+  const notBad = icons.notBad
 
   return (
     <div className={containerClasses}>
@@ -15,9 +16,13 @@ export default function HeroContent({ className }) {
       </p>
       <p className='fs-600'>I am a...</p>
       <SubTitleContainer className='accent light-bg-red fs-700 relative'>
-
         Fullstack Developer
-        <MediumIcon icon={icons.notBad.path} viewBox={icons.notBad.viewBox} className='absolute right-0 bottom-25 bg-default fill-blue' />
+        <MediumIcon
+          icon={notBad.path}
+          viewBox={notBad.viewBox}
+          xmlns={notBad.xmlns}
+          className='absolute right-0 bottom-25 bg-default fill-blue'
+        />
       </SubTitleContainer>
     </div>
   )
