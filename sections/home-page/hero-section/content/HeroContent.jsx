@@ -21,7 +21,7 @@ export default function HeroContent({ className }) {
           icon={notBad.path}
           viewBox={notBad.viewBox}
           xmlns={notBad.xmlns}
-          className='absolute right-0 bottom-25 bg-default fill-blue'
+          className='absolute right-0 bottom-25 bg-default fill-blue rotate1'
         />
       </SubTitleContainer>
     </div>

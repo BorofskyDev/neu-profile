@@ -1,4 +1,4 @@
-@mixin icon ($width, $height, $boxShadow, $deg, $translateX, $translateY) {
+@mixin icon ($width, $height, $boxShadow) {
     width: $width;
     height: $height;
     border: var(--border-100);
@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotate($deg) translate($translateX, $translateY);
 }
 
 

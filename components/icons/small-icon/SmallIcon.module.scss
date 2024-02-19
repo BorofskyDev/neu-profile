@@ -1,5 +1,5 @@
 @use '../../../styles/utils/mixins' as *;
 
 .smallIcon {
-  @include icon(3.875rem, 3.875rem, var(--box-shadow-100), -30deg, 50%, 0);
+  @include icon(3.875rem, 3.875rem, var(--box-shadow-100));
 }
