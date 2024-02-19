@@ -15,13 +15,13 @@ export default function HeroContent({ className }) {
         My name is <span className='accent fs-700'>Joel</span>
       </p>
       <p className='fs-600'>I am a...</p>
-      <SubTitleContainer className='accent light-bg-red fs-700 relative'>
+      <SubTitleContainer className='accent light-bg-red fs-600 relative'>
         Fullstack Developer
         <MediumIcon
           icon={notBad.path}
           viewBox={notBad.viewBox}
           xmlns={notBad.xmlns}
-          className='absolute right-0 bottom-25 bg-default fill-blue rotate1'
+          className='absolute bg-default fill-blue rotate1'
         />
       </SubTitleContainer>
     </div>

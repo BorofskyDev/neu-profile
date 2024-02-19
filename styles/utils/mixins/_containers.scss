@@ -1,3 +1,5 @@
+@use './_breakpoints.scss' as *;
+
 @mixin dualSection {
   width: 100%;
   border-bottom: var(--border-400);
@@ -5,6 +7,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include breakpoint(tab) {
+    flex-direction: row;
+  }
 }
 
 @mixin dualSectionSubSection($border, $alignItems) {
@@ -15,6 +21,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: $alignItems;
+
+  @include breakpoint(tab) {
+    width: 50%;
+    height: 80dvh;
+    border-bottom: none;
+    border-right: $border;
+
+    &:nth-of-type(2) {
+      border-right: none;
+    }
+  }
 }
 
 @mixin titleContainer(

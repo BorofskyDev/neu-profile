@@ -1,6 +1,13 @@
 @use '../../../styles/utils/mixins' as *;
 
 .mediumIcon {
+  top: -98%;
+  right: 20%;
   @include icon(4.6875rem, 4.6785rem, var(--box-shadow-100));
+
+  @include breakpoint(tab) {
+    top: -40%;
+    right: 15%;
+  }
 }
 
