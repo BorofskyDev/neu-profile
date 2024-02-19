@@ -6,7 +6,7 @@ export default function SmallIcon({ icon, viewBox, xmlns, iconFill, className })
 
   return (
     <div className={iconClasses}>
-        <SmallIconImg icon={icon} viewBox={viewBox} xmlns={xmlns} className={iconFill} />
+        <SmallIconImg icon={icon} viewBox={viewBox} xmlns={xmlns} iconFill={iconFill} />
     </div>
   )
 }

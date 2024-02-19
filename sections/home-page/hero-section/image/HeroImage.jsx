@@ -20,7 +20,7 @@ export default function HeroImage({ className }) {
         icon={icons.sunflower.path}
         viewBox={icons.sunflower.viewBox}
         iconBg='bg-red'
-        fill='fill-light-blue'
+        iconFill='fill-light-blue'
 
       />
     </div>

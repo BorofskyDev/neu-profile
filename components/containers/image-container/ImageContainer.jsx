@@ -15,12 +15,17 @@ export default function ImageContainer({
   bg3,
   title,
   iconBg,
-  iconFill
- 
+  iconFill,
 }) {
   return (
     <GenericContainer className={bg1}>
-      <SmallIcon xmlns={xmlns} icon={icon} viewBox={viewBox} className={`${iconBg} ${iconFill}`}  />
+      <SmallIcon
+        xmlns={xmlns}
+        icon={icon}
+        viewBox={viewBox}
+        className={iconBg}
+        iconFill={iconFill}
+      />
       <div className={`${styles.pictureContainer} ${bg2}`}>
         <Image src={src} alt={alt} />
       </div>
