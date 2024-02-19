@@ -16,12 +16,16 @@ export default function HeroImage({ className }) {
         fill1='fill-blue'
         fill2='fill-yellow'
         title='Joel Borofsky'
-        xmlns={icons.sunflower.xmlns}
-        icon={icons.sunflower.path}
-        viewBox={icons.sunflower.viewBox}
-        iconBg='bg-red'
-        iconFill='fill-light-blue'
-
+        icon1={icons.astronaut.path}
+        xmlns1={icons.astronaut.xmlns}
+        viewBox1={icons.astronaut.viewBox}
+        iconBg1='bg-red'
+        iconFill1='fill-light-blue'
+        icon2={icons.sunflower.path}
+        xmlns2={icons.sunflower.xmlns}
+        viewBox2={icons.sunflower.viewBox}
+        iconBg2='bg-indigo'
+        iconFill2='fill-light-yellow'
       />
     </div>
   )
