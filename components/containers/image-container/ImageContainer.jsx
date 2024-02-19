@@ -40,7 +40,7 @@ export default function ImageContainer({
         iconFill={iconFill2}
       />
       <div className={`${styles.pictureContainer} ${bg2}`}>
-        <Image src={src} alt={alt} />
+        <Image height={1600} width={1200} src={src} alt={alt} />
       </div>
       <NameContainer className={bg3}>{title}</NameContainer>
     </GenericContainer>

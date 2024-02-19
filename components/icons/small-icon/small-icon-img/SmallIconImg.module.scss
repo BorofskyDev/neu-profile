@@ -8,4 +8,9 @@
     width: 3.4375rem;
     height: 4.0625rem;
   }
+
+  @include breakpoint(desktop) {
+    width: 5.15625rem;
+    height: 5.78125rem;
+  }
 }
