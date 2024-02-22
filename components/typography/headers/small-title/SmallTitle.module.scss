@@ -1,3 +1,10 @@
 .smallTitle {
-    
+    width: 100%;
+    padding: var(--spacing-100) var(--spacing-200);
+    border: var(--border-200);
+    border-radius: var(--border-radius-400);
+    box-shadow: var(--box-shadow-200);
+    font-family: var(--font-title);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-700);
 }

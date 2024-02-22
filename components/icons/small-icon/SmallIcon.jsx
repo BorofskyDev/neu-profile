@@ -17,7 +17,7 @@ export default function SmallIcon({
   return (
     <motion.div
       className={iconClasses}
-      initial={{ x: isLeft ? -50 : 50, opacity: 0 }}
+      initial={{ x: isLeft ? -150 : 150, opacity: 0 }}
       whileInView={{ rotate: isLeft ? 325 : -315, x: 0, opacity: 1 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
